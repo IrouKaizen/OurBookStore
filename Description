@@ -1,4 +1,4 @@
-Description de la plateforme :
+Description de la plateforme (https://ourbookstore001.netlify.app/) :
 
 La plateforme open source de vente et d'achat de livres en ligne est une application web qui vise à connecter les vendeurs et les acheteurs de livres. Elle permet aux utilisateurs de publier, rechercher, acheter et vendre des livres neufs ou d'occasion. Le système offrira une interface intuitive et réactive, avec un backend robuste et sécurisé, le tout construit avec Angular pour la partie front-end et Spring Boot pour le back-end.
 
