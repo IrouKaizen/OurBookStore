@@ -52,3 +52,5 @@ Architecture
 L'architecture de la plateforme suit le modèle MVC (Modèle-Vue-Contrôleur) et est conçue pour être modulaire afin de faciliter l'ajout de nouvelles fonctionnalités. Le front-end Angular consomme les APIs exposées par Spring Boot pour afficher dynamiquement les informations.
 
 Cette plateforme a pour objectif d'être ouverte aux contributions de la communauté, permettant à tout développeur de proposer des améliorations, corriger des bugs ou ajouter de nouvelles fonctionnalités.
+
+So, let's gooooooo
