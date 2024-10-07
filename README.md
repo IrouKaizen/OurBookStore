@@ -15,6 +15,7 @@ Pour contribuer, c'est tout simple ! Apportez vos compétences en :
 N’oubliez pas de faire un fork et de mettre une étoile ⭐️, histoire de dire « J’étais là ! ».
 Vous n’avez pas besoin d’être un expert en code pour participer à un projet open source.
 Venez travailler avec nous car nous sommes tous là pour apprendre.
+Aussi, c'est un projet sur le long terme donc, voilà !
 
 Veuillez complèter cette liste si vous avez contribué :
 
