@@ -23,3 +23,4 @@ Veuillez complèter cette liste si vous avez contribué :
 2. Gisèle AKAKPO
 3. Nyakiwe SEMOU
 4. Azhar PINDRA
+5. Pelletia SOKPO
