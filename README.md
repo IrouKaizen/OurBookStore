@@ -24,3 +24,4 @@ Veuillez complèter cette liste si vous avez contribué :
 3. Nyakiwe SEMOU
 4. Azhar PINDRA
 5. Pelletia SOKPO
+6. Harisson ZEUFACK
