@@ -25,3 +25,4 @@ Veuillez complèter cette liste si vous avez contribué :
 4. Azhar PINDRA
 5. Pelletia SOKPO
 6. Harisson ZEUFACK
+7. Likeur off
