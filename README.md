@@ -26,3 +26,5 @@ Veuillez complèter cette liste si vous avez contribué :
 5. Pelletia SOKPO
 6. Harisson ZEUFACK
 7. Likeur off
+8. Coolrist
+9. 
