@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-user-sign-up',
+  selector: 'app-landingpage',
   standalone: true,
   imports: [RouterModule],
-  templateUrl: './user-sign-up.component.html',
+  templateUrl: './landingpage.component.html',
   styles: ``
 })
-export default class  UserSignUpComponent {
+export default class LandingpageComponent {
 
 }
