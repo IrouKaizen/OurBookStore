@@ -17,6 +17,11 @@ export const routes: Routes = [
         loadComponent: () => import('./components/shared/store/store.component'),
       },
       {
+        path: 'library',
+        title: 'library',
+        loadComponent: () => import('./components/shared/library/library.component'),
+      },
+      {
         path: 'my-books',
         title: 'My books',
         loadComponent: () => import('./components/users/my-books/my-books.component'),
@@ -28,7 +33,7 @@ export const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: 'store',
+        redirectTo: 'library',
         pathMatch: 'full',
       },
     ]
