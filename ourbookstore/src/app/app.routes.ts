@@ -12,14 +12,29 @@ export const routes: Routes = [
     loadComponent: () => import('./layouts/home/home.component'),
     children: [
       {
-        path: 'store',
-        title: 'store',
-        loadComponent: () => import('./components/shared/store/store.component'),
+        path: 'dashboard',
+        title: 'Dashboard',
+        loadComponent: () => import('./layouts/dashboard/dashboard.component'),
       },
       {
-        path: 'my-books',
-        title: 'My books',
-        loadComponent: () => import('./components/users/my-books/my-books.component'),
+        path: 'library',
+        title: 'library',
+        loadComponent: () => import('./components/shared/library/library.component'),
+      },
+      {
+        path: 'read',
+        title: 'Read',
+        loadComponent: () => import('./components/shared/reads/reads.component'),
+      },
+      {
+        path: 'notification',
+        title: 'Notification',
+        loadComponent: () => import('./components/shared/notifications/notifications.component'),
+      },
+      {
+        path: 'message',
+        title: 'Message',
+        loadComponent: () => import('./components/shared/messages/messages.component'),
       },
       {
         path: 'my-account',
@@ -28,7 +43,7 @@ export const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: 'store',
+        redirectTo: 'dashboard',
         pathMatch: 'full',
       },
     ]

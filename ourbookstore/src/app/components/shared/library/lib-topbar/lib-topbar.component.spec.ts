@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StoreComponent } from './store.component';
+import { LibTopbarComponent } from './lib-topbar.component';
 
-describe('StoreComponent', () => {
-  let component: StoreComponent;
-  let fixture: ComponentFixture<StoreComponent>;
+describe('LibTopbarComponent', () => {
+  let component: LibTopbarComponent;
+  let fixture: ComponentFixture<LibTopbarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [StoreComponent]
+      imports: [LibTopbarComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(StoreComponent);
+    fixture = TestBed.createComponent(LibTopbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

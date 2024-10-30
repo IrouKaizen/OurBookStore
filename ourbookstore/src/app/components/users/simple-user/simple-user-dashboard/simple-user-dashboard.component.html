@@ -1,0 +1,199 @@
+<section class="p-4 lg:p-8 border-l rounded-tl-2xl w-[calc(100vw-16vw)] h-full">
+  <div>
+    <div
+      class="flex bg-white/50 backdrop-blur-xl border border-neutral-900/5 lg:sticky lg:top-5 p-2 px-4 rounded-md items-center justify-between"
+    >
+      <div>
+        <p class="text-xl font-semibold">Dashboard</p>
+        <p class="text-neutral-500">welcome Likeur</p>
+      </div>
+
+      <div>
+        <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Rapid access links -->
+    <div class="mt-6 lg:mt-12">
+      <div>
+        <p>Rapid access link</p>
+      </div>
+      <div class="grid mt-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div
+          class="border-l-4 border border-neutral-900/5 border-l-yellow-600 bg-white rounded-2xl p-4"
+        >
+          <div>
+            <h2 class="text-yellow-800">Your books</h2>
+            <div class="mt-2 flex justify-between items-center">
+              <p class="text-3xl">8</p>
+              <div>
+                <button
+                  class="text-white bg-yellow-800 active:bg-yellow-700 duration-150 active:scale-95 p-1 px-4 rounded-full"
+                >
+                  View all
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-l-4 border border-neutral-900/5 border-l-green-600 bg-white rounded-2xl p-4"
+        >
+          <div>
+            <h2 class="text-green-600">Readed books</h2>
+            <div class="mt-2 flex justify-between items-center">
+              <p class="text-3xl">2</p>
+              <div>
+                <button
+                  class="text-white bg-green-800 active:bg-green-700 duration-150 active:scale-95 p-1 px-4 rounded-full"
+                >
+                  View all
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-l-4 border-l-orange-600 border border-neutral-900/5 bg-white rounded-2xl p-4"
+        >
+          <div>
+            <h2 class="text-orange-600">In your wishlist</h2>
+            <div class="mt-2 flex justify-between items-center">
+              <p class="text-3xl">16</p>
+              <div>
+                <button
+                  class="text-white bg-orange-800 active:bg-orange-700 duration-150 active:scale-95 p-1 px-4 rounded-full"
+                >
+                  View all
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-l-4 border-l-slate-600 border border-neutral-900/5 bg-white rounded-2xl p-4"
+        >
+          <div>
+            <h2 class="text-slate-600">Conversations</h2>
+            <div class="mt-2 flex justify-between items-center">
+              <p class="text-3xl">4</p>
+              <div>
+                <button
+                  class="text-white bg-slate-800 active:bg-slate-700 duration-150 active:scale-95 p-1 px-4 rounded-full"
+                >
+                  View all
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- favorite & suggestion-->
+    <div class="mt-6 lg:mt-12 grid lg:grid-cols-2 gap-6 lg:gap-8">
+      <!-- Favorite book -->
+      <div>
+        <div>
+          <h3>Favorite book list</h3>
+        </div>
+        <div
+          class="border mt-4 h-[40vh] bg-white overflow-y-scroll p-4 lg:p-6 overflow-hidden rounded-2xl"
+        >
+          <div class="">
+            <div class="grid gap-3">
+              @for (book of favoriteListBook; track book.bookid) {
+              <div class="flex justify-between border-b duration-150">
+                <div class="p-4 flex gap-4">
+                  <div class="h-20 w-14 shadow overflow-hidden rounded-md">
+                    <img
+                      [src]="book.bookphotolink"
+                      class="h-full w-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h1>{{ book.bookname }}</h1>
+                    <p
+                      class="px-3 p-1 bg-yellow-600/10 text-yellow-600 mt-2 rounded-full text-sm w-max"
+                    >
+                      Science
+                    </p>
+                  </div>
+                </div>
+                <div class="flex gap-2 items-center h-max">
+                  <a class="text-yellow-800">Read</a>
+                  <button
+                    class="size-9 grid place-content-center rounded-full bg-yellow-600/10 text-yellow-800 active:text-yellow-500 duration-150 active:scale-95"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Some suggestion of book -->
+      <div>
+        <div>
+          <h3>You may also like</h3>
+        </div>
+        <div
+          class="mt-4 h-max p-4 lg:p-6 grid lg:grid-cols-3 gap-4 overflow-hidden rounded-2xl"
+        >
+          @for (book of listbook; track book.bookid) {
+          <div class="grid place-content-center">
+            <div class="h-48 w-32 overflow-hidden rounded-xl">
+              <img
+                [src]="book.bookphotolink"
+                class="h-full w-full object-cover"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col items-center">
+              <p class="mt-2 text-sm">
+                {{ book.bookname }}
+              </p>
+              <p class="text-red-600 flex gap-2 text-sm">
+                {{ book.bookprice }}
+                <span>$</span>
+              </p>
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
