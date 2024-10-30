@@ -22,6 +22,21 @@ export const routes: Routes = [
         loadComponent: () => import('./components/shared/library/library.component'),
       },
       {
+        path: 'read',
+        title: 'Read',
+        loadComponent: () => import('./components/shared/reads/reads.component'),
+      },
+      {
+        path: 'notification',
+        title: 'Notification',
+        loadComponent: () => import('./components/shared/notifications/notifications.component'),
+      },
+      {
+        path: 'message',
+        title: 'Message',
+        loadComponent: () => import('./components/shared/messages/messages.component'),
+      },
+      {
         path: 'my-account',
         title: 'My account',
         loadComponent: () => import('./components/shared/my-account/my-account.component'),

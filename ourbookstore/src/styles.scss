@@ -21,3 +21,23 @@ body {
   radial-gradient(at 0% 0%, hsla(184,100%,76%,1) 0px, transparent 50%);
 
 }
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(84, 79, 5, 0.879); /* gray-700 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2d3748; /* gray-800 */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #03172a00;
+  border-radius: 4px;
+   /* gray-100 */
+}
