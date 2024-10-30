@@ -12,19 +12,14 @@ export const routes: Routes = [
     loadComponent: () => import('./layouts/home/home.component'),
     children: [
       {
-        path: 'store',
-        title: 'store',
-        loadComponent: () => import('./components/shared/store/store.component'),
+        path: 'dashboard',
+        title: 'Dashboard',
+        loadComponent: () => import('./layouts/dashboard/dashboard.component'),
       },
       {
         path: 'library',
         title: 'library',
         loadComponent: () => import('./components/shared/library/library.component'),
-      },
-      {
-        path: 'my-books',
-        title: 'My books',
-        loadComponent: () => import('./components/users/my-books/my-books.component'),
       },
       {
         path: 'my-account',
@@ -33,7 +28,7 @@ export const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: 'library',
+        redirectTo: 'dashboard',
         pathMatch: 'full',
       },
     ]
