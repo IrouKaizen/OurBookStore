@@ -1,0 +1,13 @@
+@tailwind base;
+
+.Jules {
+  color: red
+}
+
+@tailwind components;
+
+.Jules {
+  color: blue
+}
+
+@tailwind utilities;
