@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../public/favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <title>Login OurBook</title>
+  </head>
+  <body>
+    <section class="bg-blue-200 min-h-screen flex items-center justify-center">
+    <!-- login container -->
+    <div class="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-4 items-center  border border-gray-900 dark:border-gray-300">
+      <!-- image -->
+      <div class="md:block hidden w-1/2">
+        <img class="rounded-2xl" src="./src/Img-1.jpg">
+      </div>
+      <!-- form -->
+      <div class="md:w-1/2 px-8 md:px-8">
+        <h2 class="font-bold text-2xl text-[#002D74]">Se connecter</h2>  
+        <form action="" class="flex flex-col gap-4 mt-0 mb-4">
+          <input class="p-2 mt-8 rounded-xl border" type="email" name="email" placeholder="ourbook@gmail.com">
+          <div class="relative">
+            <input class="p-2 rounded-xl border w-full" type="password" name="password" placeholder="••••••••">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/2" viewBox="0 0 16 16">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+            </svg>
+          </div>
+          <div class="flex items-start">
+            <div class="flex items-start">
+                <div class="flex items-center h-5">
+                    <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required />
+                </div>
+                <label for="remember" class="ms-2 text-sm font-medium text-gray-400">Se souvenir de moi</label>
+            </div>
+            <a href="#" class="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Mot de passe oublié ?</a>
+        </div>
+          <button class="bg-[#002D74] rounded-xl text-white py-2 hover:scale-105 duration-300">Se connecter</button>
+        </form>
+  
+        <div class="flex items-stretch gap-4">
+          <button class="bg-white border py-1 w-full rounded-xl mt-2 flex justify-center items-center text-sm hover:scale-105 duration-300 text-[#002D74]">
+            <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="25px">
+              <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z" />
+              <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z" />
+              <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z" />
+              <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z" />
+            </svg>
+            Google
+          </button>
+    
+          <button class="bg-white border py-1 w-full rounded-xl mt-2 flex justify-center items-center text-sm hover:scale-105 duration-300 text-[#002D74]">
+            <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25px" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.303 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.262c-3.338.726-4.043-1.416-4.043-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.091-.744.083-.729.083-.729 1.205.085 1.84 1.238 1.84 1.238 1.07 1.835 2.809 1.304 3.495.997.108-.774.419-1.305.762-1.606-2.665-.304-5.467-1.333-5.467-5.93 0-1.31.468-2.382 1.236-3.222-.124-.303-.535-1.523.116-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 013.003-.404c1.018.005 2.042.137 3.003.404 2.292-1.552 3.3-1.23 3.3-1.23.653 1.653.242 2.873.118 3.176.77.84 1.236 1.912 1.236 3.222 0 4.61-2.807 5.625-5.479 5.921.432.372.815 1.105.815 2.228v3.31c0 .32.192.694.8.577C20.565 21.798 24 17.303 24 12 24 5.37 18.63 0 12 0z"/>
+            </svg>
+            Github
+          </button>
+        </div>
+        <div class="text-sm font-medium text-gray-500 dark:text-gray-300 mt-3">
+          Vous n'avez pas de compte ? <a href="#" class="text-blue-700 hover:underline dark:text-blue-500">Créer un compte</a>
+      </div>
+      </div>
+
+    </div>
+  </section>
+  </body>
+</html>
